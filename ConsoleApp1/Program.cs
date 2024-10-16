@@ -1,7 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-byte pi = 3;
-Console.WriteLine(pi);
-
-pi = 4;
-Console.WriteLine(pi);
+﻿double myNumber = 0;
+double myNumber2 = 0;
+Console.WriteLine("Enter a Number: ");
+double input = double.Parse(Console.ReadLine());
+Console.WriteLine("Enter a Number: ");
+double input2 = double.Parse(Console.ReadLine());
+double result = input + input2;
+Console.WriteLine($"You have entered : {input} and {input2}. The total sum is: {result}");
+Console.ReadKey();
