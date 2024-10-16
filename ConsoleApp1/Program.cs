@@ -1,9 +1,15 @@
-﻿double myNumber = 0;
-double myNumber2 = 0;
-Console.WriteLine("Enter a Number: ");
-double input = double.Parse(Console.ReadLine());
-Console.WriteLine("Enter a Number: ");
-double input2 = double.Parse(Console.ReadLine());
-double result = input + input2;
-Console.WriteLine($"You have entered : {input} and {input2}. The total sum is: {result}");
+﻿// Guess the number
+int myNum = 3;
+Console.WriteLine("Write a number between 1-10");
+int input = int.Parse(Console.ReadLine());
+
+if (myNum == input)
+{
+    Console.WriteLine("Correct !!!");
+}
+else
+{
+    Console.WriteLine("Sorry, you are wrong!");
+}
+
 Console.ReadKey();
