@@ -1,15 +1,27 @@
-﻿// Guess the number
-int myNum = 3;
-Console.WriteLine("Write a number between 1-10");
-int input = int.Parse(Console.ReadLine());
-
-if (myNum == input)
+﻿string rocket = """
+        /\\
+       /  \\
+      /    \\
+     /      \\
+    /        \\
+   /__________\\
+    |        |
+    |  O O   |
+    |        |
+    |________|
+       |  |
+       |  |
+      /____\\
+     |      |
+     |______|
+""";
+for (int i=0; i < 10; i++)
 {
-    Console.WriteLine("Correct !!!");
-}
-else
-{
-    Console.WriteLine("Sorry, you are wrong!");
-}
+    Console.Clear();
+    Console.WriteLine(rocket);
+    Thread.Sleep(1000);
+    rocket = "\r\n" + rocket;
+    
 
+};
 Console.ReadKey();
